@@ -1,0 +1,33 @@
+{
+  "name": "config_proj_with_electron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron main.js",
+    "build": "electron-builder",
+    "compile-scss": "node-sass D:/config_proj_with_electron/assets/scss/styles.scss -o D:/config_proj_with_electron/assets/css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^29.0.1",
+    "electron-builder": "^22.11.7",
+    "node-sass": "^9.0.0"
+  },
+  "build": {
+    "appId": "com.example.myapp",
+    "productName": "MyApp",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis"
+    }
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}
